@@ -1,0 +1,31 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+	<!-- Main ListView 
+		 Always give id value as list(@android:id/list)
+	-->
+	 <TextView android:id="@+id/week_name"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:background="#3b3d3f"
+            android:paddingTop="10dip"
+            android:paddingBottom="10dip"
+            android:textColor="#418fbb"
+            android:text = "Sunday"
+            />
+ 
+    <ListView
+        android:id="@android:id/list"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:divider="#b5b5b5"
+        android:dividerHeight="1dp"
+        android:cacheColorHint="@android:color/transparent"
+        />
+
+</LinearLayout>

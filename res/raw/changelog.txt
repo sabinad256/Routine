@@ -1,0 +1,41 @@
+<html>
+  <head>
+    <style type='text/css'>
+      a            { color:#a0a0e0 }
+      div.title    { 
+          color:#C0F0C0; 
+          font-size:1.2em; 
+          font-weight:bold; 
+          margin-top:1em; 
+          margin-bottom:0.5em; 
+          text-align:center }
+      div.subtitle { 
+          color:#C0F0C0; 
+          font-size:0.8em; 
+          margin-bottom:1em; 
+          text-align:center }
+      div.freetext { color:#F0F0F0 }
+      div.list     { color:#C0C0F0 }
+    </style>
+  </head>
+  <body>
+  $ 1.0.1
+  % Version 1.0.1
+  _ 2011-06-01
+  ! Stable <b>Routine </b> released!
+    * All feature working
+    * Notification and widget working
+  
+$ 0.1
+  % Version 0.1
+  _ 2011-06-01
+  ! Finally! <b>Routine </b> released!
+    * Some features not working
+    * Follow on twitter and facebook
+     
+$ 0.0.1
+  % Version 0.1
+  _ (beta, not working)
+$ END_OF_CHANGE_LOG
+  </body>
+</html>

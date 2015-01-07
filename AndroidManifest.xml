@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="elx.routine.sab"
+    android:versionCode="1"
+    android:versionName="1.0.1" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+       />
+     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="elx.routine.sab.Splash"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Light.NoTitleBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name="elx.routine.sab.Prefs"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="elx.routine.sab.PREFS" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        
+        <activity
+            android:name="elx.routine.sab.Routine"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="elx.routine.sab.ROUTINE" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+         <activity
+            android:name="elx.routine.sab.Online"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="elx.routine.sab.ONLINE" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+          <activity
+            android:name="elx.routine.sab.FisrtTime"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="elx.routine.sab.FIRSTTIME" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name="elx.routine.sab.Week"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="elx.routine.sab.WEEK" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name="elx.routine.sab.ByWeek"
+            android:label="@string/app_name"
+             >
+            <intent-filter>
+                <action android:name="elx.routine.sab.ByWEEK" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <receiver android:name=".DisplayWidget" android:label="@string/app_name">
+            <intent-filter >
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider"
+                android:resource="@xml/widget"/>
+        </receiver>
+    </application>
+
+</manifest>

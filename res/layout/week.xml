@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#00ccff" >
+
+    <TextView
+        android:id="@+id/week_name"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#4e4747"
+        android:gravity="center"
+        android:paddingBottom="20dip"
+        android:layout_marginTop="5dip"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        
+        
+        android:paddingTop="20dip"
+        android:text="Choose A Day"
+        android:textColor="#418fbb"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <ListView
+        android:id="@+id/listView1"
+        android:layout_width="match_parent"
+        android:layout_height="360dp"
+        android:layout_weight="0.65"
+         android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:layout_marginTop="3dip"
+        android:soundEffectsEnabled="true"
+        android:dividerHeight="5dip"
+        android:entries="@array/weekName"
+        android:entryValues="@array/weekValues"
+         android:cacheColorHint="@android:color/transparent"
+        android:gravity="center"
+         >
+    </ListView>
+
+</LinearLayout>

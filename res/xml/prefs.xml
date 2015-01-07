@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+    <PreferenceCategory
+        android:summary="General Data About User"
+        android:title="General Setting"
+        >
+        <EditTextPreference
+            android:key="roll_no"
+            android:title="Roll Number"
+            android:summary="Enter your Roll number"
+            />
+        <ListPreference
+            android:key="section_id"
+            android:title="Section"
+            android:summary="Change Your Section"
+            android:entries="@array/lTitles"
+            android:entryValues="@array/lValues"
+            android:defaultValue="0"
+            />
+        
+        <CheckBoxPreference
+            android:key="auto_update"
+            android:summary="Automatically update routine"
+            android:title="Automatic Update"
+            android:defaultValue="false"
+            />
+       
+    </PreferenceCategory>
+   
+    <PreferenceCategory
+        android:summary="About the Developer"
+        android:title="About the app"
+        ><Preference
+            android:summary="Version 1.0.1 Beta 1"
+            android:title="Routine"/>
+        <Preference 
+            android:key="reset"
+            android:summary="Reset to default"
+            android:title="Reset"/>
+    </PreferenceCategory>
+    
+
+</PreferenceScreen>

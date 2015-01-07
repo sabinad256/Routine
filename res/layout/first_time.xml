@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+     >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Welcome to Routine Configuration"
+        android:layout_marginTop="15dp"
+        android:textSize="20sp"
+        android:textAppearance="?android:attr/textAppearanceLarge" 
+       />
+
+    <TextView
+        android:id="@+id/firstText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:text="" />
+
+    <EditText
+        android:id="@+id/rollNo"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Enter Your Roll Number" 
+        >
+
+              <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/sec"
+        android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+             android:text="Choose Your Section"
+         	
+         	android:layout_marginTop="20dp"
+        	android:layout_marginLeft="25dp"
+        	android:layout_marginRight="15dp"
+        	 />
+
+    <Spinner
+        android:id="@+id/sectionId"
+        android:layout_width="217dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="10dp"
+        android:entries="@array/lTitles"
+        android:entryValues="@array/lValues"
+        android:gravity="center" />
+
+    <Button
+        android:id="@+id/submitFirst"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Connect" />
+
+</LinearLayout>
